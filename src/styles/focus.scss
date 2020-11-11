@@ -1,0 +1,26 @@
+.focus {
+  position: relative;
+}
+
+.focus:before,
+.focus::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+  background-color: $color-default;
+  left: 0;
+}
+
+.focus:active {
+  cursor: pointer;
+}
+
+.focus:focus::after,
+.focus:focus:before {
+  width: 100%;
+  opacity: 1;
+}

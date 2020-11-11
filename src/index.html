@@ -4,11 +4,264 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorem ipsum</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header">
+      <a href="#" class="header__logo">logo</a>
+      <ul class="menu">
+        <li class="menu__item hover">
+          Menu
+          <img src="./images/Vector.jpg" class="decorate">
+        </li>
+        <li class="menu__item hover">
+          Menu 2
+        </li>
+        <li class="menu__item hover">
+          Menu 3
+        </li>
+        <li class="menu__item hover">
+          Menu 4
+        </li>
+      </ul>
+      <ul class="settings">
+        <li class="settings__item hover">
+          Eng
+          <img src="./images/Vector.jpg" class="decorate">
+        </li>
+        <li class="settings__item hover">
+          Log in
+        </li>
+      </ul>
+    </header>
+    <main class="main">
+      <div class="main__content">
+        <div class="main__content--part1">
+          <h3 class="main__title">Lorem, ipsum dolor sit amet</h3>
+          <div class="main__toggle">
+            <button
+              type="button"
+              class="main__button focus"
+            >
+              Lorem
+            </button>
+            <button
+              type="button"
+              class="main__button focus"
+              checked
+            >
+              Ipsum
+            </button>
+          </div>
+          <div class="main__cards">
+            <div class="card">
+              <h2 class="card__title">Lorem ipsum</h2>
+              <p class="card__price">$ <span>56.99</span> /mo</p>
+              <div class="card__checkbox">
+                <div class="round">
+                  <input type="checkbox" id="checkbox" checked/>
+                  <label for="checkbox"></label>
+                  <p class="round__name">Lorem</p>
+                  <p class="round__price">$99.99</p>
+                </div>
+                
+                <div class="round">
+                  <input type="checkbox" id="checkbox2" />
+                  <label for="checkbox2"></label>
+                  <p class="round__name">Lorem</p>
+                  <p class="round__price">$99.99</p>
+                </div>
+                <div class="round">
+                  <input type="checkbox" id="checkbox3" />
+                  <label for="checkbox3"></label>
+                  <p class="round__name">Lorem</p>
+                  <p class="round__price">$99.99</p>
+                </div>
+              </div>
+              <button type="button" class="card__button">
+                Buy now
+              </button>
+            </div>
+            <div class="card card--save">
+              <h2 class="card__title">Lorem ipsum</h2>
+              <p class="card__price">$ <span>50.50</span> /mo</p>
+              <p class="card__save">Save 35%</p>
+              <div class="card__checkbox">
+                <div class="round">
+                  <input type="checkbox" id="checkbox4"/>
+                  <label for="checkbox4"></label>
+                  <p class="round__name">Lorem</p>
+                  <p class="round__price">$99.99</p>
+                </div>
+                <div class="round">
+                  <input type="checkbox" id="checkbox5" checked/>
+                  <label for="checkbox5"></label>
+                  <p class="round__name">Lorem</p>
+                  <p class="round__price">$99.99</p>
+                </div>
+                <div class="round">
+                  <input type="checkbox" id="checkbox6" />
+                  <label for="checkbox6"></label>
+                  <p class="round__name">Lorem</p>
+                  <p class="round__price">$99.99</p>
+                </div>
+              </div>
+              <button type="button" class="card__button">
+                Buy now
+              </button>
+            </div>
+            <div class="card card--save">
+              <h2 class="card__title">Lorem ipsum</h2>
+              <p class="card__price">$ <span>39.99</span> /mo</p>
+              <p class="card__save">Save 15%</p>
+              <div class="card__checkbox">
+                <div class="round">
+                  <input type="checkbox" id="checkbox7"/>
+                  <label for="checkbox7"></label>
+                  <p class="round__name">Lorem</p>
+                  <p class="round__price">$99.99</p>
+                </div>
+                <div class="round">
+                  <input type="checkbox" id="checkbox8" checked/>
+                  <label for="checkbox8"></label>
+                  <p class="round__name">Lorem</p>
+                  <p class="round__price">$99.99</p>
+                </div>
+                <div class="round">
+                  <input type="checkbox" id="checkbox9" />
+                  <label for="checkbox9"></label>
+                  <p class="round__name">Lorem</p>
+                  <p class="round__price">$99.99</p>
+                </div>
+              </div>
+              <button type="button" class="card__button">
+                Buy now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="main__part2">
+          <h3 class="part2__title">Ut enim ad minim veniam</h3>
+          <p class="part2__paragraph">Quis nostrud exercitation uliamco laboris nisi ut aliquip</p>
+          <div class="main__pin">
+            <div class="main__pin--top">
+              <img src="./images/flat-ui_safe.svg" class="pin">
+              <img src="./images/flat-ui_skateboard.svg" class="pin">
+              <img src="./images/flat-ui_mountain.svg" class="pin">
+              <img src="./images/flat-ui_ubmrella.svg" class="pin">
+              <img src="./images/flat-ui_spray.svg" class="pin">
+              <img src="./images/flat-ui_file.svg" class="pin">
+              <img src="./images/flat-ui_toilet-paper.svg" class="pin">
+              <img src="./images/flat-ui_donut.svg" class="pin">
+            </div>
+            <div class="main__pin--bottom">
+              <img src="./images/flat-ui_pencils.svg" class="pin">
+              <img src="./images/flat-ui_loop.svg" class="pin">
+              <img src="./images/flat-ui_clipboard.svg" class="pin">
+              <img src="./images/flat-ui_car.svg" class="pin">
+              <img src="./images/flat-ui_trunk.svg" class="pin">
+              <img src="./images/flat-ui_graph.svg" class="pin">
+            </div>
+          </div>
+          <div class="main__check">
+            <div class="main__check--part checkbox">
+              <input type="checkbox" id="check1" checked>
+              <label for="check1"><span>Egestas erat imperdiet sed</span></label>
+            </div>
+            <div class="main__check--part checkbox">
+              <input type="checkbox" id="check2" checked>
+              <label for="check2"><span>Rhoncus dolor purus non</span></label>
+            </div>
+            <div class="main__check--part checkbox">
+              <input type="checkbox" id="check3" checked>
+              <label for="check3"><span>Interdum varius sit amet</span></label>
+            </div>
+            <div class="main__check--part checkbox">
+              <input type="checkbox" id="check4" checked>
+              <label for="check4"><span>Egestas quis ipsum</span></label>
+            </div>
+            <div class="main__check--part checkbox">
+              <input type="checkbox" id="check5" checked>
+              <label for="check5"><span>Nunc congue nisi vitae</span></label>
+            </div>
+            <div class="main__check--part checkbox">
+              <input type="checkbox" id="check6" checked>
+              <label for="check6"><span>A scelerisque purus semper</span></label>
+            </div>
+            <div class="main__check--part checkbox">
+              <input type="checkbox" id="check7" checked>
+              <label for="check7"><span>Eget mi proin sed libero</span></label>
+            </div>
+            <div class="main__check--part checkbox">
+              <input type="checkbox" id="check8" checked>
+              <label for="check8"><span>Posuere urna nec tincidunt praesent</span></label>
+            </div>
+            <div class="main__check--part checkbox">
+              <input type="checkbox" id="check9" checked>
+              <label for="check9"><span>Sed nisi lacus sed viverra</span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__part1">
+          <h2 class="footer__logo">logo</h2>
+          <p class="footer__paragraph">Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+        <div class="footer__part2">
+          <section class="footer__title">Lorem</section>
+          <ul class="footer__list1">
+            <li class="footer__item">Ipsum</li>
+            <li class="footer__item">Lorem</li>
+            <li class="footer__item">Ipsum</li>
+            <li class="footer__item">Ipsum</li>
+            <li class="footer__item">Lorem</li>
+          </ul>
+        </div>
+        <div class="footer__part3">
+          <section class="footer__title">Lorem ipsum</section>
+          <ul class="footer__list1">
+            <li class="footer__item">Lorem</li>
+            <li class="footer__item">Lorem Ipsum</li>
+            <li class="footer__item">Ipsum</li>
+            <li class="footer__item">Lorem Ipsum</li>
+            <li class="footer__item">Lorem Ipsum</li>
+          </ul>
+        </div>
+        <div class="footer__part4">
+          <section class="footer__title">Lorem</section>
+          <ul class="footer__list1">
+            <li class="footer__item">Lorem ipsum</li>
+            <li class="footer__item">Lorem</li>
+          </ul>
+        </div>
+        <div class="footer__part5">
+          <section class="footer__title">Lorem</section>
+          <div class="footer__contacts">
+            <img src="./images/fb.svg" class="footer__icon" alt="fb">
+            <img src="./images/inst.svg" class="footer__icon" alt="inst">
+            <img src="./images/yt.svg" class="footer__icon" alt="yt">
+          </div>
+        </div>
+      </div>
+      <span class="footer__decor"></span>
+      <div class="footer__bottom">
+        <div class="footer__bottom--left">
+          <section class="lang">
+            English
+            <img src="./images/Vector.jpg" class="decorate">
+          </section>
+          <section>Lorem Ipsum</section>
+        </div>
+        <div class="footer__right">
+          <section class="footer__author"> &copy; 2020 Lorem</section>
+          <section>Lorem Ipsum</section>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

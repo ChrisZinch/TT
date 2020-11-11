@@ -1,0 +1,71 @@
+.card {
+  text-align: center;
+  width: $card-width;
+  height: $card-height;
+  background-color: #FFF;
+  box-shadow: 0px 0px 10px rgba(131, 144, 193, 0.25);
+  padding-top: 40px;
+  padding-bottom: 48px;
+  padding: 40px 24px 48px 24px;
+  transition: transform 0.3s ease-in;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &--save .card__checkbox {
+    margin-top: 27px;
+  }
+
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-default;
+  }
+
+  &__price {
+    color: #2E3C49;
+    font-size: 18px;
+    font-weight: 300;
+
+    span {
+      font-size: 24px;
+    }
+  }
+
+  &__checkbox {
+    position: relative;
+    height: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    column-gap: 16px;
+    margin-top: 60px;
+  }
+
+  &__button {
+    width: 160px;
+    height: 54px;
+    border: 2px solid $color-default;
+    color: $color-default;
+    background-color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 38px;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color-hover;
+      color: #FFF;
+    }
+  }
+
+  &__save {
+    color: #E67E22;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-top: 16px;
+  }
+}
