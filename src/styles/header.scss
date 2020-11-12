@@ -1,0 +1,66 @@
+.header {
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(131, 144, 193, 0.25);
+
+  font-size: 12px;
+  line-height: 16px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+    padding: 0 10vw;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    color: $color-default;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  &__mobile {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 200px;
+  width: 15vw;
+  font-size: 12px;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-between;
+  width: 5vw;
+  min-width: 70px;
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    &__top {
+      display: none;
+    }
+
+    &__mobile {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.mobile {
+  &__logo {
+    display: flex;
+  }
+
+  &__help {
+    width: 100px;
+    height: 50px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 40px;
+    top: 25px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  &__box {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    top: 72px;
+    left: -100%;
+    z-index: 5;
+  
+    width: 100%;
+    height: 500px;
+    background-color: $main-bg;
+  
+    transition-duration: $transitionDuration;
+  }
+
+  &__list {
+    display: block;
+  }
+
+  &__item {
+    display: flex;
+    position: relative;
+    color: $color-default;
+    font-size: 20px;
+    width: 100vw;
+    margin-top: 20px;
+    border-bottom: 1px solid #e9e6e6;
+    padding: 15px 24px 17px;
+  }
+
+  &__btn > span,
+  &__btn > span::after,
+  &__btn > span::before {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #262626;
+    transition-duration: 0.5s;
+  }
+
+  &__btn > span::before {
+    content: "";
+    top: -5px;
+  }
+
+  &__btn > span::after {
+    content: "";
+    top: 5px;
+  }
+
+  &__btn--line,
+  &--line::after,
+  &--line::before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #262626;
+    transition-duration: $transitionDuration;
+  }
+
+  &__btn--line::before {
+    top: -25px;
+    content: "";
+  }
+
+  &__btn--line::after {
+    top: 25px;
+    content: "";
+  }
+  
+}
+
+
+.mobile__btn:checked ~ .mobile__btn > span {
+  transform: rotate(45deg);
+}
+
+.mobile__toggle {
+  display: none;
+}
+
+.mobile__toggle:checked ~ .mobile__btn > span {
+  transform: rotate(45deg);
+}
+
+.mobile__toggle:checked ~ .mobile__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+.mobile__toggle:checked ~ .mobile__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.mobile__toggle:checked ~ .mobile__btn {
+  position: absolute;
+  left: 40px;
+}
+
+.mobile__toggle:checked ~ .mobile__box {
+  visibility: visible;
+  left: 0;
+}

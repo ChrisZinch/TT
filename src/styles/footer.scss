@@ -1,0 +1,177 @@
+.footer {
+  height: 27vw;
+  min-height: 500px;
+  width: 100vw;
+  background-color: $footer-color;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  overflow: hidden;
+  padding: 0 10vw;
+  margin: 0 auto;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1500px;
+  }
+
+  &__part1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  &__part1,
+  &__part2,
+  &__part3,
+  &__part4,
+  &__part5 {
+    min-width: 90px;
+  }
+
+  &__decor {
+    content: "";
+    height: 1px;
+    width: 100%;
+    max-width: 1500px;
+    background-color: #fff;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__logo {
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    margin-bottom: 7px;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__contacts {
+    min-width: 125px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bottom {
+    margin-top: 36px;
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    justify-content: space-between;
+
+    &--left {
+      display: flex;
+      justify-content: space-between;
+      min-width: 180px;
+    }
+
+    &--right {
+      display: flex;
+      justify-content: space-between;
+      min-width: 170px;
+    }
+  }
+
+  &__line {
+    content: "";
+    height: 12px;
+    width: 1px;
+    background-color: #fff;
+    bottom: -1px;
+    position: relative;
+  }
+
+  &__arrow {
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .footer {
+    &__part1 {
+      max-width: 200px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      max-width: 90px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .footer {
+    justify-content: space-evenly;
+
+    &__top {
+      display: flex;
+      max-width: 300px;
+      width: 100%;
+    }
+
+    &__top,
+    &__bottom {
+      max-width: 500px;
+      min-width: 320px;
+    }
+
+    &__bottom {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__top {
+      flex-wrap: wrap;
+    }
+
+    &__bottom {
+      flex-direction: row;
+
+      justify-content: space-between;
+
+      &--right {
+        flex-direction: column;
+      }
+
+      &--left {
+        flex-direction: column;
+      }
+    }
+
+    &__line {
+      display: none;
+    }
+
+    &__part1,
+    &__paragraph {
+      width: 90px;
+    }
+  }
+}

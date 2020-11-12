@@ -1,0 +1,16 @@
+.primary {
+  background-color: $color-default;
+  border: 2px solid $color-default;
+  transition: all 0.2s ease-in;
+  color: #fff;
+
+  &:hover {
+    background-color: $color-hover;
+    border-color: $color-hover;
+  }
+
+  &:active {
+    background-color: $color-active;
+    border-color: $color-active;
+  }
+}
