@@ -9,31 +9,78 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" class="header__logo">logo</a>
-      <ul class="menu">
-        <li class="menu__item hover">
-          Menu
-          <img src="./images/Vector.jpg" class="decorate">
-        </li>
-        <li class="menu__item hover">
-          Menu 2
-        </li>
-        <li class="menu__item hover">
-          Menu 3
-        </li>
-        <li class="menu__item hover">
-          Menu 4
-        </li>
-      </ul>
-      <ul class="settings">
-        <li class="settings__item hover">
-          Eng
-          <img src="./images/Vector.jpg" class="decorate">
-        </li>
-        <li class="settings__item hover">
-          Log in
-        </li>
-      </ul>
+      <div class="header__top">
+        <a href="#" class="header__logo">logo</a>
+        <ul class="menu">
+          <li class="menu__item hover">
+            Menu
+            <img
+              src="./images/Vector.jpg"
+              class="decorate"
+              alt="arrow"
+            >
+          </li>
+          <li class="menu__item hover">
+            Menu 2
+          </li>
+          <li class="menu__item hover">
+            Menu 3
+          </li>
+          <li class="menu__item hover">
+            Menu 4
+          </li>
+        </ul>
+        <ul class="settings">
+          <li class="settings__item hover">
+            Eng
+            <img
+              src="./images/Vector.jpg"
+              class="decorate"
+              alt="arrow"
+            >
+          </li>
+          <li class="settings__item hover">
+            Log in
+          </li>
+        </ul>
+      </div>
+      <div class="header__mobile">
+        <div class="mobile__left">
+          <input
+            id="mobile__toggle"
+            type="checkbox"
+            class="mobile__toggle"
+          >
+          <label class="mobile__btn" for="mobile__toggle">
+            <span class="mobile__btn--line"></span>
+          </label>
+          <nav class="mobile__box">
+            <ul class="mobile__list">
+              <li class="mobile__item hover">
+                Menu
+              </li>
+              <li class="mobile__item hover">
+                Menu 2
+              </li>
+              <li class="mobile__item hover">
+                Menu 3
+              </li>
+              <li class="mobile__item hover">
+                Menu 4
+              </li>
+              <li class="mobile__item hover">
+                Eng
+              </li>
+              <li class="mobile__item hover">
+                Log in
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile__logo">
+          <a href="#" class="header__logo">logo</a>
+        </div>
+      </div>
     </header>
     <main class="main">
       <div class="main__content">
@@ -46,11 +93,7 @@
             >
               Lorem
             </button>
-            <button
-              type="button"
-              class="main__button focus"
-              checked
-            >
+            <button type="button" class="main__button focus">
               Ipsum
             </button>
           </div>
@@ -60,54 +103,62 @@
               <p class="card__price">$ <span>56.99</span> /mo</p>
               <div class="card__checkbox">
                 <div class="round">
-                  <input type="checkbox" id="checkbox" checked/>
-                  <label for="checkbox"></label>
-                  <p class="round__name">Lorem</p>
-                  <p class="round__price">$99.99</p>
-                </div>
-                
-                <div class="round">
-                  <input type="checkbox" id="checkbox2" />
-                  <label for="checkbox2"></label>
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    checked
+                    >
+                  <label for="checkbox"> </label>
                   <p class="round__name">Lorem</p>
                   <p class="round__price">$99.99</p>
                 </div>
                 <div class="round">
-                  <input type="checkbox" id="checkbox3" />
-                  <label for="checkbox3"></label>
+                  <input type="checkbox" id="checkbox2" >
+                  <label for="checkbox2"> </label>
+                  <p class="round__name">Lorem</p>
+                  <p class="round__price">$99.99</p>
+                </div>
+                <div class="round">
+                  <input type="checkbox" id="checkbox3" >
+                  <label for="checkbox3"> </label>
                   <p class="round__name">Lorem</p>
                   <p class="round__price">$99.99</p>
                 </div>
               </div>
-              <button type="button" class="card__button">
+            <button type="button" class="card__button primary" >
                 Buy now
               </button>
             </div>
             <div class="card card--save">
+              <div class="ribbon ribbon-top-left"><span>Lorem ipsum</span></div>
               <h2 class="card__title">Lorem ipsum</h2>
               <p class="card__price">$ <span>50.50</span> /mo</p>
               <p class="card__save">Save 35%</p>
               <div class="card__checkbox">
                 <div class="round">
-                  <input type="checkbox" id="checkbox4"/>
-                  <label for="checkbox4"></label>
+                  <input type="checkbox" id="checkbox4" >
+                  <label for="checkbox4"> </label>
                   <p class="round__name">Lorem</p>
                   <p class="round__price">$99.99</p>
                 </div>
                 <div class="round">
-                  <input type="checkbox" id="checkbox5" checked/>
-                  <label for="checkbox5"></label>
+                  <input
+                    type="checkbox"
+                    id="checkbox5"
+                    checked
+                  >
+                  <label for="checkbox5"> </label>
                   <p class="round__name">Lorem</p>
                   <p class="round__price">$99.99</p>
                 </div>
                 <div class="round">
-                  <input type="checkbox" id="checkbox6" />
-                  <label for="checkbox6"></label>
+                  <input type="checkbox" id="checkbox6" >
+                  <label for="checkbox6"> </label>
                   <p class="round__name">Lorem</p>
                   <p class="round__price">$99.99</p>
                 </div>
               </div>
-              <button type="button" class="card__button">
+              <button type="button" class="card__button primary">
                 Buy now
               </button>
             </div>
@@ -117,25 +168,29 @@
               <p class="card__save">Save 15%</p>
               <div class="card__checkbox">
                 <div class="round">
-                  <input type="checkbox" id="checkbox7"/>
-                  <label for="checkbox7"></label>
+                  <input type="checkbox" id="checkbox7" />
+                  <label for="checkbox7"> </label>
                   <p class="round__name">Lorem</p>
                   <p class="round__price">$99.99</p>
                 </div>
                 <div class="round">
-                  <input type="checkbox" id="checkbox8" checked/>
-                  <label for="checkbox8"></label>
+                  <input
+                    type="checkbox"
+                    id="checkbox8"
+                    checked
+                  >
+                  <label for="checkbox8"> </label>
                   <p class="round__name">Lorem</p>
                   <p class="round__price">$99.99</p>
                 </div>
                 <div class="round">
                   <input type="checkbox" id="checkbox9" />
-                  <label for="checkbox9"></label>
+                  <label for="checkbox9"> </label>
                   <p class="round__name">Lorem</p>
                   <p class="round__price">$99.99</p>
                 </div>
               </div>
-              <button type="button" class="card__button">
+              <button type="button" class="card__button primary">
                 Buy now
               </button>
             </div>
@@ -146,59 +201,151 @@
           <p class="part2__paragraph">Quis nostrud exercitation uliamco laboris nisi ut aliquip</p>
           <div class="main__pin">
             <div class="main__pin--top">
-              <img src="./images/flat-ui_safe.svg" class="pin">
-              <img src="./images/flat-ui_skateboard.svg" class="pin">
-              <img src="./images/flat-ui_mountain.svg" class="pin">
-              <img src="./images/flat-ui_ubmrella.svg" class="pin">
-              <img src="./images/flat-ui_spray.svg" class="pin">
-              <img src="./images/flat-ui_file.svg" class="pin">
-              <img src="./images/flat-ui_toilet-paper.svg" class="pin">
-              <img src="./images/flat-ui_donut.svg" class="pin">
+              <img
+                src="./images/flat-ui_safe.svg"
+                class="pin"
+                alt="pin"
+              >
+              <img
+                src="./images/flat-ui_skateboard.svg"
+                class="pin"
+                alt="pin"
+              >
+              <img
+                src="./images/flat-ui_mountain.svg"
+                class="pin"
+                alt="pin"
+              >
+              <img
+                src="./images/flat-ui_ubmrella.svg"
+                class="pin"
+                alt="pin"
+              >
+              <img
+                src="./images/flat-ui_spray.svg"
+                class="pin"
+                alt="pin"
+              >
+              <img
+                src="./images/flat-ui_file.svg"
+                class="pin"
+                alt="pin"
+              >
+              <img
+                src="./images/flat-ui_toilet-paper.svg"
+                class="pin"
+                alt="pin"
+              >
+              <img
+                src="./images/flat-ui_donut.svg"
+                class="pin"
+                alt="pin"
+              >
             </div>
             <div class="main__pin--bottom">
-              <img src="./images/flat-ui_pencils.svg" class="pin">
-              <img src="./images/flat-ui_loop.svg" class="pin">
-              <img src="./images/flat-ui_clipboard.svg" class="pin">
-              <img src="./images/flat-ui_car.svg" class="pin">
-              <img src="./images/flat-ui_trunk.svg" class="pin">
-              <img src="./images/flat-ui_graph.svg" class="pin">
+              <img
+                src="./images/flat-ui_pencils.svg"
+                class="pin"
+                alt="pin"
+              >
+              <img
+                src="./images/flat-ui_loop.svg"
+                class="pin"
+                alt="pin"
+              >
+              <img
+                src="./images/flat-ui_clipboard.svg"
+                class="pin"
+                alt="pin"
+              >
+              <img
+                src="./images/flat-ui_car.svg"
+                class="pin"
+                alt="pin"
+              >
+              <img
+                src="./images/flat-ui_trunk.svg"
+                class="pin"
+                alt="pin"
+              >
+              <img
+                src="./images/flat-ui_graph.svg"
+                class="pin"
+                alt="pin"
+              >
             </div>
           </div>
           <div class="main__check">
             <div class="main__check--part checkbox">
-              <input type="checkbox" id="check1" checked>
+              <input
+                type="checkbox"
+                id="check1"
+                checked
+              >
               <label for="check1"><span>Egestas erat imperdiet sed</span></label>
             </div>
             <div class="main__check--part checkbox">
-              <input type="checkbox" id="check2" checked>
+              <input
+                type="checkbox"
+                id="check2"
+                checked
+              >
               <label for="check2"><span>Rhoncus dolor purus non</span></label>
             </div>
             <div class="main__check--part checkbox">
-              <input type="checkbox" id="check3" checked>
+              <input
+                type="checkbox"
+                id="check3"
+                checked
+              >
               <label for="check3"><span>Interdum varius sit amet</span></label>
             </div>
             <div class="main__check--part checkbox">
-              <input type="checkbox" id="check4" checked>
+              <input
+                type="checkbox"
+                id="check4"
+                checked
+              >
               <label for="check4"><span>Egestas quis ipsum</span></label>
             </div>
             <div class="main__check--part checkbox">
-              <input type="checkbox" id="check5" checked>
+              <input
+                type="checkbox"
+                id="check5"
+                checked
+              >
               <label for="check5"><span>Nunc congue nisi vitae</span></label>
             </div>
             <div class="main__check--part checkbox">
-              <input type="checkbox" id="check6" checked>
+              <input
+                type="checkbox"
+                id="check6"
+                checked
+              >
               <label for="check6"><span>A scelerisque purus semper</span></label>
             </div>
             <div class="main__check--part checkbox">
-              <input type="checkbox" id="check7" checked>
+              <input
+                type="checkbox"
+                id="check7"
+                checked
+              >
               <label for="check7"><span>Eget mi proin sed libero</span></label>
             </div>
             <div class="main__check--part checkbox">
-              <input type="checkbox" id="check8" checked>
+              <input
+                type="checkbox"
+                id="check8"
+                checked
+              >
               <label for="check8"><span>Posuere urna nec tincidunt praesent</span></label>
             </div>
             <div class="main__check--part checkbox">
-              <input type="checkbox" id="check9" checked>
+              <input
+                type="checkbox"
+                id="check9"
+                checked
+              >
               <label for="check9"><span>Sed nisi lacus sed viverra</span></label>
             </div>
           </div>
@@ -239,11 +386,29 @@
           </ul>
         </div>
         <div class="footer__part5">
-          <section class="footer__title">Lorem</section>
+          <section class="footer__title">Lorem ipsum</section>
           <div class="footer__contacts">
-            <img src="./images/fb.svg" class="footer__icon" alt="fb">
-            <img src="./images/inst.svg" class="footer__icon" alt="inst">
-            <img src="./images/yt.svg" class="footer__icon" alt="yt">
+            <a href="#">
+              <img
+              src="./images/fb.svg"
+              class="footer__icon"
+              alt="fb"
+            >
+            </a>
+            <a href="#">
+              <img
+              src="./images/inst.svg"
+              class="footer__icon"
+              alt="inst"
+            >
+            </a>
+            <a href="#">
+              <img
+              src="./images/yt.svg"
+              class="footer__icon"
+              alt="yt"
+            >
+            </a>
           </div>
         </div>
       </div>
@@ -252,12 +417,17 @@
         <div class="footer__bottom--left">
           <section class="lang">
             English
-            <img src="./images/Vector.jpg" class="decorate">
+            <img
+              src="./images/Vector.svg"
+              class="footer__arrow"
+              alt="arrow"
+            >
           </section>
           <section>Lorem Ipsum</section>
         </div>
-        <div class="footer__right">
+        <div class="footer__bottom--right">
           <section class="footer__author"> &copy; 2020 Lorem</section>
+          <span class="footer__line"></span>
           <section>Lorem Ipsum</section>
         </div>
       </div>

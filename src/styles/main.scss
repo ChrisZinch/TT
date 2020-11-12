@@ -7,29 +7,45 @@
 @import "focus";
 @import "part2";
 @import "checkbox";
+@import "primary";
+@import "secondary";
+@import "ribbon";
+@import "mobile";
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
-  scroll-behavior: smooth;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: $main-bg;
 }
 
 .main {
   display: flex;
   justify-content: center;
-  padding: 0 405px;
-  background-color: $main-bg;
   padding-top: 56px;
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+  padding: 56px 10vw 0;
+  margin: 0 auto;
 
   &__button {
+    margin-top: 32px;
     outline: none;
     border: 0;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 600;
-    background-color:$main-bg;
+    background-color: $main-bg;
     width: 84px;
-    color: #C9D4D9;
+    color: #c9d4d9;
     height: 30px;
     position: relative;
     transition: all 0.2s ease-in;
@@ -49,13 +65,15 @@ body {
 
   &__toggle {
     display: flex;
-    justify-content: center
+    justify-content: center;
   }
 
   &__cards {
-    display: flex;
-    justify-content: space-between;
-    width: 57vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    justify-items: stretch;
+    max-width: 1500px;
     cursor: pointer;
     margin-top: 55px;
   }
@@ -80,20 +98,81 @@ body {
     }
 
     &--bottom {
-      padding: 0px 14%;
+      padding: 0 14%;
       display: flex;
       justify-content: space-between;
       margin-top: 30px;
     }
   }
 
-
   &__check {
-    width: 57vw;
+    width: 100%;
+    max-width: 1500px;
     display: grid;
     margin-top: 57px;
     margin-bottom: 120px;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 57px;
+  }
+
+  &__content {
+    max-width: 1500px;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 1350px) {
+  .main {
+    &__cards {
+      justify-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    &__cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__pin {
+      max-width: 600px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main {
+    &__check {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 300px;
+      font-size: 12px;
+    }
+
+    &__pin {
+      display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      max-width: 300px;
+      width: 100%;
+
+      &--top {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 10px;
+      }
+
+      &--bottom {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: 10px;
+        margin: 0;
+      }
+    }
   }
 }
